@@ -8,7 +8,7 @@ void setup() {
   // int result = myFunction(2, 3);
   pinMode(32, OUTPUT);
   Serial.begin(9600);
-  Serial.println("Started.")
+  Serial.println("Started.");
 }
 
 void loop() {
