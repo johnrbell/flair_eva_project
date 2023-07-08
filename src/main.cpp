@@ -3,9 +3,9 @@
 #include <WiFi.h>
 // #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
-#include <wifi_creds.h>
+#include <wifi_creds.h>   // include for wifi creds, src/wifi_creds.h
 
-// SPIFFS initialization
+// SPIFFS setup
 void initSPIFFS() {
   if (!SPIFFS.begin()) {
     Serial.println("Error mounting SPIFFS volume.");
@@ -14,10 +14,8 @@ void initSPIFFS() {
   }
 }
 
-// WiFi credentials & init
-// const char *WIFI_SSID = "Fios-mVd9B";
-// const char *WIFI_PASS = "had43oasis28jet";
 
+// WiFI setup
 void initWiFi() {
   WiFi.mode(WIFI_STA);
   WiFi.begin(WIFI_SSID, WIFI_PASS);
@@ -29,10 +27,9 @@ void initWiFi() {
   Serial.printf(" %s\n", WiFi.localIP().toString().c_str());
 }
 
-// Web Server Setup
+// Web Server setup
 AsyncWebServer server(80);
 
-// Web Server Initilization
 String processor(const String &var) {
     return String("testing");
 }
@@ -64,7 +61,7 @@ void setup() {
 
   initSPIFFS();
   initWiFi();
-  delay(5000);
+  delay(1000);
   initWebServer();
 }
 void loop() {
