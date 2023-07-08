@@ -1,5 +1,11 @@
 #include <Arduino.h>
 #include <SPIFFS.h>
+#include <WiFi.h>
+
+// WiFi credentials
+const char *WIFI_SSID = "test_network";
+const char *WIFI_PASS = "espresso";
+  
 // put function declarations here:
 // int myFunction(int, int);
 
@@ -13,12 +19,27 @@ void initSPIFFS() {
   }
 }
 
+void initWiFi() {
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(WIFI_SSID, WIFI_PASS);
+  Serial.printf("Trying to connect [%s] ", WiFi.macAddress().c_str());
+  while (WiFi.status() != WL_CONNECTED) {
+      Serial.print(".");
+      delay(500);
+  }
+  Serial.printf(" %s\n", WiFi.localIP().toString().c_str());
+}
+
 void setup() {
   // put your setup code here, to run once:
   // int result = myFunction(2, 3);
   pinMode(32, OUTPUT);
+  
   Serial.begin(9600);
   Serial.println("Started.");
+
+  initSPIFFS();
+  initWiFi();
 }
 
 void loop() {
