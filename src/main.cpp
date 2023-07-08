@@ -1,11 +1,30 @@
 #include <Arduino.h>
 #include <SPIFFS.h>
 #include <WiFi.h>
+#include <ESPAsyncWebServer.h>
 
 // WiFi credentials
 const char *WIFI_SSID = "test_network";
 const char *WIFI_PASS = "espresso";
   
+// Web Server Setup
+#define HTTP_PORT 80
+AsyncWebServer server(HTTP_PORT);
+
+void onRootRequest(AsyncWebServerRequest *request) {
+  request->send(SPIFFS, "/index.html", "text/html", false, processor);
+}
+
+void initWebServer() {
+    server.on("/", onRootRequest);
+    server.serveStatic("/", SPIFFS, "/");
+    server.begin();
+}
+String processor(const String &var) {
+    return String(var == "STATE" && led.on ? "on" : "off");
+}
+
+
 // put function declarations here:
 // int myFunction(int, int);
 
@@ -40,6 +59,7 @@ void setup() {
 
   initSPIFFS();
   initWiFi();
+  initWebServer();
 }
 
 void loop() {
