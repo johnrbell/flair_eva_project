@@ -27,8 +27,10 @@ void initWiFi() {
   Serial.printf(" %s\n", WiFi.localIP().toString().c_str());
 }
 
-// Web Server setup
+// Web Server & Socket setup
 AsyncWebServer server(80);
+AsyncWebSocket ws("/ws");
+
 
 String processor(const String &var) {
     return String("testing");
@@ -51,6 +53,10 @@ void initWebServer() {
     server.begin();
 }
 
+void initWebSocket() {
+    server.addHandler(&ws);
+}
+
 
 // Sketch Functions
 void setup() {
@@ -62,6 +68,7 @@ void setup() {
   initSPIFFS();
   initWiFi();
   delay(1000);
+  initWebSocket();
   initWebServer();
 }
 void loop() {
