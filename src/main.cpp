@@ -3,6 +3,16 @@
 // put function declarations here:
 // int myFunction(int, int);
 
+// ----------------------------------------------------------------------------
+// SPIFFS initialization
+// ----------------------------------------------------------------------------
+void initSPIFFS() {
+  if (!SPIFFS.begin()) {
+    Serial.println("Cannot mount SPIFFS volume...");
+    // while(1) digitalWrite(LED_BUILTIN, millis() % 200 < 50 ? HIGH : LOW);
+  }
+}
+
 void setup() {
   // put your setup code here, to run once:
   // int result = myFunction(2, 3);
