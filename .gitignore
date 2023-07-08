@@ -5,3 +5,4 @@
 .vscode/ipch
 */.DS_Store
 .DS_Store
+src/wifi_creds.h

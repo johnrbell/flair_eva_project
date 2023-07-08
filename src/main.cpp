@@ -3,6 +3,7 @@
 #include <WiFi.h>
 // #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
+#include <wifi_creds.h>
 
 // SPIFFS initialization
 void initSPIFFS() {
@@ -14,21 +15,17 @@ void initSPIFFS() {
 }
 
 // WiFi credentials & init
-const char *WIFI_SSID = "Fios-mVd9B";
-const char *WIFI_PASS = "had43oasis28jet";
+// const char *WIFI_SSID = "Fios-mVd9B";
+// const char *WIFI_PASS = "had43oasis28jet";
 
 void initWiFi() {
-  Serial.println("WTF");
   WiFi.mode(WIFI_STA);
   WiFi.begin(WIFI_SSID, WIFI_PASS);
-  Serial.println("WTF2");
   Serial.printf("Trying to connect [%s] ", WiFi.macAddress().c_str());
-  Serial.println("WTF3");
   while (WiFi.status() != WL_CONNECTED) {
       Serial.print(".");
       delay(500);
   }
-  Serial.println("WTF4");
   Serial.printf(" %s\n", WiFi.localIP().toString().c_str());
 }
 
