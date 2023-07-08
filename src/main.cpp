@@ -42,19 +42,31 @@ void onRootRequest(AsyncWebServerRequest *request) {
 }
 
 void initWebServer() {
-    server.on("/", onRootRequest);
+  server.on("/", onRootRequest);
 
-//     server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
-//         Serial.println("TESTING.");
-//         request->send(200, "text/plain", "Hello World");
-//     });
+  // server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
+  //     Serial.println("TESTING.");
+  //     request->send(200, "text/plain", "Hello World");
+  // });
 
-    server.serveStatic("/", SPIFFS, "/");
-    server.begin();
+  server.serveStatic("/", SPIFFS, "/");
+  server.begin();
+}
+
+void onEvent(AsyncWebSocket       *server,  //
+             AsyncWebSocketClient *client,  //
+             AwsEventType          type,    // the signature of this function is defined
+             void                 *arg,     // by the `AwsEventHandler` interface
+             uint8_t              *data,    //
+             size_t                len) {   //
+
+  // we are going to add here the handling of
+  // the different events defined by the protocol
 }
 
 void initWebSocket() {
-    server.addHandler(&ws);
+  server.onEvent(onEvent);
+  server.addHandler(&ws);
 }
 
 
