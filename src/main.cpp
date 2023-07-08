@@ -3,9 +3,17 @@
 #include <WiFi.h>
 // #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
-#include <wifi_creds.h>   // include for wifi creds, src/wifi_creds.h
+#include <wifi_creds.h>   // Include WiFi Creds -> src/wifi_creds.h
 
-// SPIFFS setup
+// === === === === === === === === === === === === ===
+// helpers
+// === === === === === === === === === === === === ===
+
+// Web Server & Socket Setup
+AsyncWebServer server(80);
+AsyncWebSocket ws("/ws");
+
+// SPIFFS Setup
 void initSPIFFS() {
   if (!SPIFFS.begin()) {
     Serial.println("Error mounting SPIFFS volume.");
@@ -14,8 +22,7 @@ void initSPIFFS() {
   }
 }
 
-
-// WiFI setup
+// WiFI Setup
 void initWiFi() {
   WiFi.mode(WIFI_STA);
   WiFi.begin(WIFI_SSID, WIFI_PASS);
@@ -27,20 +34,18 @@ void initWiFi() {
   Serial.printf(" %s\n", WiFi.localIP().toString().c_str());
 }
 
-// Web Server & Socket setup
-AsyncWebServer server(80);
-AsyncWebSocket ws("/ws");
-
-
+// Rendering Template "Engine"
 String processor(const String &var) {
     return String("testing");
 }
 
+// Request Root Handler
 void onRootRequest(AsyncWebServerRequest *request) {
   Serial.println("/index requested.");
   request->send(SPIFFS, "/index.html", "text/html", false, processor);
 }
 
+// Server Init/Routing
 void initWebServer() {
   server.on("/", onRootRequest);
 
@@ -53,22 +58,37 @@ void initWebServer() {
   server.begin();
 }
 
-void onEvent(AsyncWebSocket       *server,  //
-             AsyncWebSocketClient *client,  //
-             AwsEventType          type,    // the signature of this function is defined
-             void                 *arg,     // by the `AwsEventHandler` interface
-             uint8_t              *data,    //
-             size_t                len) {   //
+// WebSocket Event Handler
+void onEvent(AsyncWebSocket       *server,
+             AsyncWebSocketClient *client,
+             AwsEventType          type,
+             void                 *arg,
+             uint8_t              *data,
+             size_t                len) {
 
-  // we are going to add here the handling of
-  // the different events defined by the protocol
+    switch (type) {
+        case WS_EVT_CONNECT:
+            Serial.printf("WebSocket client #%u connected from %s\n", client->id(), client->remoteIP().toString().c_str());
+            break;
+        case WS_EVT_DISCONNECT:
+            Serial.printf("WebSocket client #%u disconnected\n", client->id());
+            break;
+        case WS_EVT_DATA:
+        case WS_EVT_PONG:
+        case WS_EVT_ERROR:
+            break;
+    }
 }
 
+// WebSocket Init
 void initWebSocket() {
-  server.onEvent(onEvent);
+  ws.onEvent(onEvent);
   server.addHandler(&ws);
 }
 
+// === === === === === === === === === === === === ===
+// main sketch
+// === === === === === === === === === === === === ===
 
 // Sketch Functions
 void setup() {
