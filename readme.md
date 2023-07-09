@@ -1,4 +1,4 @@
-# Flair 58 EVA 
+# Flair 58 EVA Mod
 #### EVA (Espresso Via Actuator)
 
 Hardware: 
