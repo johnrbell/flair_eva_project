@@ -2,15 +2,15 @@
 #### EVA (Espresso Via Actuator)
 
 Off the Shelf Hardware: 
-- ESP32: https://www.amazon.com/dp/B089F6BY3C?psc=1&ref=ppx_yo2ov_dt_b_product_details
+- ESP32: [Amazon](https://www.amazon.com/dp/B089F6BY3C?psc=1&ref=ppx_yo2ov_dt_b_product_details)
     - I think any should work? 
-- Linear Actuators: https://robotdigg.com/product/1815/9-36VDC-stepper-motor-gear-drive-linear-actuator
+- Linear Actuators: [RobotDigg](https://robotdigg.com/product/1815/9-36VDC-stepper-motor-gear-drive-linear-actuator)
     - Two needed to achieve the pressure and maintain actuator speed.
-- TMC2209 Driver: https://www.amazon.com/dp/B08DFV4QQ1?psc=1&ref=ppx_yo2ov_dt_b_product_details
+- TMC2209 Driver: [Amazon](https://www.amazon.com/dp/B08DFV4QQ1?psc=1&ref=ppx_yo2ov_dt_b_product_details)
     - To be tested still. 
-- 24v to 5v Converter: https://www.amazon.com/dp/B08NZV88MC?psc=1&ref=ppx_yo2ov_dt_b_product_details
+- 24v to 5v Converter:  [Amazon](https://www.amazon.com/dp/B08NZV88MC?psc=1&ref=ppx_yo2ov_dt_b_product_details)
     - To power the ESP32 from the PSU if not using another source.
-- 150w 24v PSU: https://www.amazon.com/dp/B077B7DHYL?psc=1&ref=ppx_yo2ov_dt_b_product_details
+- 150w 24v PSU:  [Amazon](https://www.amazon.com/dp/B077B7DHYL?psc=1&ref=ppx_yo2ov_dt_b_product_details)
     - Provides 24v to drive the steppers/actuators. 
 
 Custom Hardware:
