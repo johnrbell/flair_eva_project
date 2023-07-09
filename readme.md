@@ -20,7 +20,7 @@ Custom Hardware:
     - TBD.
 
 
-All in, off the shelf parts should be about $175, varying based on shipping. 
+All in, off the shelf parts should be about $175, with shipping varying a bit.
 
 Custom hardware, estimating $20 to $100 depending on process and finish. 
 
