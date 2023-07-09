@@ -29,5 +29,5 @@ function onClose(event) {
 
 function onMessage(event) {
     console.log(`Received a notification from ${event.origin}`);
-    console.log(event);
+    console.log(event.data);
 }
