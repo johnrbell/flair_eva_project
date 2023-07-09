@@ -1,8 +1,6 @@
 # Flair 58 EVA 
 #### EVA (Espresso Via Actuator)
 
-I swear I will document something, someday. 
-
 Hardware: 
 - ESP32: https://www.amazon.com/dp/B089F6BY3C?psc=1&ref=ppx_yo2ov_dt_b_product_details
     - I think any should work? 
@@ -16,3 +14,5 @@ Hardware:
     - Provides 24v to drive the steppers/actuators. 
 
 All in, should be about $175. 
+
+The (long term) plan: ESP32-Hosted webserver, serving a page via localhost to control the actuators and enable automated pressure profiling. 
