@@ -1,7 +1,7 @@
 # Flair 58 EVA Mod
 #### EVA (Espresso Via Actuator)
 
-Hardware: 
+Off the Shelf Hardware: 
 - ESP32: https://www.amazon.com/dp/B089F6BY3C?psc=1&ref=ppx_yo2ov_dt_b_product_details
     - I think any should work? 
 - Linear Actuators: https://robotdigg.com/product/1815/9-36VDC-stepper-motor-gear-drive-linear-actuator
@@ -13,6 +13,13 @@ Hardware:
 - 150w 24v PSU: https://www.amazon.com/dp/B077B7DHYL?psc=1&ref=ppx_yo2ov_dt_b_product_details
     - Provides 24v to drive the steppers/actuators. 
 
-All in, should be about $175. 
+Custom Hardware:
+- Custom lever hinges.
+    - Currently 3D Printed for testing purposes. 
+- Custom lever hinge pins. 
+    - TBD.
+
+All in, off the shelf should be about $175. 
+Custom hardware tbd, looking $20 to $100 depending on process and finish. 
 
 The (long term) plan: ESP32-Hosted webserver, serving a page via localhost to control the actuators and enable automated pressure profiling. 
