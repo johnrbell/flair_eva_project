@@ -11,3 +11,5 @@ Hardware:
     - To power the ESP32 from the PSU if not using another source.
 - 150w 24v PSU: https://www.amazon.com/dp/B077B7DHYL?psc=1&ref=ppx_yo2ov_dt_b_product_details
     - Provides 24v to drive the steppers/actuators. 
+
+All in, should be about $175. 
