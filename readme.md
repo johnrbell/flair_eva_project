@@ -19,7 +19,8 @@ Custom Hardware:
 - Custom lever hinge pins. 
     - TBD.
 
-All in, off the shelf should be about $175. 
-Custom hardware tbd, looking $20 to $100 depending on process and finish. 
+All in, off the shelf parts should be about $175, varying based on shipping. 
+
+Custom hardware, estimating $20 to $100 depending on process and finish. 
 
 The (long term) plan: ESP32-Hosted webserver, serving a page via localhost to control the actuators and enable automated pressure profiling. 
