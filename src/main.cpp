@@ -86,6 +86,15 @@ void initWebSocket() {
   server.addHandler(&ws);
 }
 
+// ----------------------------------------------------------------------------
+// Sending data to WebSocket clients
+// ----------------------------------------------------------------------------
+
+void notifyClients() {
+    ws.textAll("led blinked.");
+    // ws.textAll(led.on ? "on" : "off");
+}
+
 // === === === === === === === === === === === === ===
 // main sketch
 // === === === === === === === === === === === === ===
@@ -110,4 +119,5 @@ void loop() {
   delay(1000);
   digitalWrite(32, LOW);
   delay(500);
+  notifyClients();   
 }
