@@ -104,6 +104,8 @@ void setup() {
   initWebServer();
 }
 void loop() {
+  ws.cleanupClients();
+
   digitalWrite(32, HIGH);
   delay(1000);
   digitalWrite(32, LOW);
