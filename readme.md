@@ -1,4 +1,4 @@
-# Flair 58 EVA Mod
+# Flair 58 EVA Project
 ### EVA (Espresso Via Actuator)
 
 Off the Shelf Hardware: 
