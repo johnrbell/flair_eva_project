@@ -22,7 +22,7 @@ Custom Hardware:
 
 All in, off the shelf parts should be about $175, with shipping varying a bit.
 
-Custom hardware, estimating $20 to $100 depending on process and finish. 
+Custom hardware, estimating $20 to $50 depending on process and finish. 
 
 **The (long term) plan:** ESP32-Hosted webserver, serving a page via localhost to control the actuators and enable automated pressure profiling. 
 
