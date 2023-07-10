@@ -3,7 +3,7 @@
 
 Off the Shelf Hardware: 
 - ESP32: [Amazon](https://www.amazon.com/dp/B089F6BY3C?psc=1&ref=ppx_yo2ov_dt_b_product_details)
-    - Should work.
+    - Working so far. 👍
 - Linear Actuators: [RobotDigg](https://robotdigg.com/product/1815/9-36VDC-stepper-motor-gear-drive-linear-actuator)
     - Two needed to achieve the pressure and maintain actuator speed.
 - TMC2209 Driver: [Amazon](https://www.amazon.com/dp/B08DFV4QQ1?psc=1&ref=ppx_yo2ov_dt_b_product_details)
