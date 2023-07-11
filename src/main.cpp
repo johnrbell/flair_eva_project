@@ -1,13 +1,13 @@
 #include <Arduino.h>
 #include <SPIFFS.h>
 #include <WiFi.h>
-// #include <AsyncTCP.h>
+#include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
 #include <wifi_creds.h>   // Include WiFi Creds -> src/wifi_creds.h
 
-// === === === === === === === === === === === === ===
-// helpers
-// === === === === === === === === === === === === ===
+// ----------------------------------------------------------------------------
+// Helpers
+// ----------------------------------------------------------------------------
 
 // Web Server & Socket Setup
 AsyncWebServer server(80);
@@ -87,24 +87,22 @@ void initWebSocket() {
 }
 
 // ----------------------------------------------------------------------------
-// Sending data to WebSocket clients
+// Sending Data to WebSocket Clients
 // ----------------------------------------------------------------------------
-
 void notifyClients() {
     ws.textAll("led blinked.");
     // ws.textAll(led.on ? "on" : "off");
 }
 
-// === === === === === === === === === === === === ===
-// main sketch
-// === === === === === === === === === === === === ===
-
+// ----------------------------------------------------------------------------
+// Main Sketch
+// ----------------------------------------------------------------------------
 // Sketch Functions
 void setup() {
   pinMode(32, OUTPUT);
   
   Serial.begin(115200); delay(500);
-  Serial.println("Started.");
+  Serial.println("welcome to flavortown.");
 
   initSPIFFS();
   initWiFi();
@@ -112,6 +110,7 @@ void setup() {
   initWebSocket();
   initWebServer();
 }
+
 void loop() {
   ws.cleanupClients();
 
