@@ -97,7 +97,6 @@ void notifyClients() {
 // ----------------------------------------------------------------------------
 // Main Sketch
 // ----------------------------------------------------------------------------
-// Sketch Functions
 void setup() {
   pinMode(32, OUTPUT);
   
@@ -113,7 +112,7 @@ void setup() {
 
 void loop() {
   ws.cleanupClients();
-
+  
   digitalWrite(32, HIGH);
   delay(1000);
   digitalWrite(32, LOW);
