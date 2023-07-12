@@ -8,19 +8,9 @@
 // ----------------------------------------------------------------------------
 // Helpers
 // ----------------------------------------------------------------------------
-
 // Web Server & Socket Setup
 AsyncWebServer server(80);
 AsyncWebSocket ws("/ws");
-
-// SPIFFS Setup
-void initSPIFFS() {
-  if (!SPIFFS.begin()) {
-    Serial.println("Error mounting SPIFFS volume.");
-  }else{
-    Serial.println("Mounted SPIFFS volume successfully.");
-  }
-}
 
 // WiFI Setup
 void initWiFi() {
@@ -39,6 +29,15 @@ String processor(const String &var) {
     return String("testing");
 }
 
+// SPIFFS Filesystem Setup
+void initSPIFFS() {
+  if (!SPIFFS.begin()) {
+    Serial.println("Error mounting SPIFFS volume.");
+  }else{
+    Serial.println("Mounted SPIFFS volume successfully.");
+  }
+}
+
 // Request Root Handler
 void onRootRequest(AsyncWebServerRequest *request) {
   Serial.println("/index requested.");
@@ -48,12 +47,6 @@ void onRootRequest(AsyncWebServerRequest *request) {
 // Server Init/Routing
 void initWebServer() {
   server.on("/", onRootRequest);
-
-  // server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
-  //     Serial.println("TESTING.");
-  //     request->send(200, "text/plain", "Hello World");
-  // });
-
   server.serveStatic("/", SPIFFS, "/");
   server.begin();
 }
@@ -112,7 +105,7 @@ void setup() {
 
 void loop() {
   ws.cleanupClients();
-  
+
   digitalWrite(32, HIGH);
   delay(1000);
   digitalWrite(32, LOW);
