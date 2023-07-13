@@ -5,6 +5,11 @@
 #include <ESPAsyncWebServer.h>
 #include <wifi_creds.h>   // Include WiFi Creds -> src/wifi_creds.h
 
+#define LED_PIN 32
+#define BTN_PIN 22
+const uint8_t DEBOUNCE_DELAY 10; 
+
+
 // ----------------------------------------------------------------------------
 // Helpers
 // ----------------------------------------------------------------------------
