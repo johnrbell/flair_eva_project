@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <SPIFFS.h>
 #include <WiFi.h>
-#include <AsyncTCP.h>
+// #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
 #include <wifi_creds.h>   // Include WiFi Creds -> src/wifi_creds.h
 
@@ -164,12 +164,12 @@ void setup() {
   pinMode(led.pin,    OUTPUT);
   pinMode(button.pin, INPUT);
   
-  Serial.begin(115200); delay(500);
-  Serial.println("welcome to flavortown.");
+  Serial.begin(115200); delay(1000);
+  Serial.println("welcome to flavortown. 🌭");
 
   initSPIFFS();
   initWiFi();
-  delay(1000);
+  // delay(1000);
   initWebSocket();
   initWebServer();
 }
@@ -179,6 +179,7 @@ void loop() {
     
   button.read();
   if (button.pressed()) led.on = !led.on;
+  
   led.update();
 
   // digitalWrite(32, HIGH);
