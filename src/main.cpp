@@ -71,7 +71,7 @@ struct Button {
 // WebServer/Socket Helpers 
 // ----------------------------------------------------------------------------
 Led led =       {LED_PIN, false};
-Button button = {BTN_PIN, HIGHT, 0, 0};
+Button button = {BTN_PIN, HIGH, 0, 0};
 
 // ----------------------------------------------------------------------------
 // WebServer/Socket Helpers 
