@@ -1,7 +1,5 @@
 # Flair 58 EVA Project
 
-<!-- ![image](/img/eva_logo.png) -->
-
 Off the Shelf Hardware: 
 - ESP32: [Amazon](https://www.amazon.com/dp/B089F6BY3C?psc=1&ref=ppx_yo2ov_dt_b_product_details)
     - Working so far. 👍
