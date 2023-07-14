@@ -22,7 +22,6 @@ struct Led {
     }
 };
 
-
 // ----------------------------------------------------------------------------
 // Define Button
 // ----------------------------------------------------------------------------
@@ -67,6 +66,12 @@ struct Button {
         lastReading = reading;
     }
 };
+
+// ----------------------------------------------------------------------------
+// WebServer/Socket Helpers 
+// ----------------------------------------------------------------------------
+Led led =       {LED_PIN, false};
+Button button = {BTN_PIN, HIGHT, 0, 0};
 
 // ----------------------------------------------------------------------------
 // WebServer/Socket Helpers 
@@ -155,7 +160,9 @@ void notifyClients() {
 // Main Sketch
 // ----------------------------------------------------------------------------
 void setup() {
-  pinMode(32, OUTPUT);
+  // pinMode(32, OUTPUT);
+  pinMode(led.pin,    OUTPUT);
+  pinMode(button.pin, INPUT);
   
   Serial.begin(115200); delay(500);
   Serial.println("welcome to flavortown.");
@@ -169,10 +176,15 @@ void setup() {
 
 void loop() {
   ws.cleanupClients();
+    
+  button.read();
+  if (button.pressed()) led.on = !led.on;
+  led.update();
 
-  digitalWrite(32, HIGH);
-  delay(1000);
-  digitalWrite(32, LOW);
-  delay(500);
-  notifyClients();   
+
+  // digitalWrite(32, HIGH);
+  // delay(1000);
+  // digitalWrite(32, LOW);
+  // delay(500);
+  // notifyClients();   
 }
