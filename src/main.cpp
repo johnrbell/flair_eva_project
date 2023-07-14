@@ -181,7 +181,6 @@ void loop() {
   if (button.pressed()) led.on = !led.on;
   led.update();
 
-
   // digitalWrite(32, HIGH);
   // delay(1000);
   // digitalWrite(32, LOW);
