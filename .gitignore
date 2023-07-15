@@ -7,4 +7,5 @@
 .DS_Store
 \.DS_Store
 test/
+lib/
 src/wifi_creds.h
