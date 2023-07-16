@@ -76,8 +76,6 @@ Button button = {BTN_PIN, HIGH, 0, 0};
 // ----------------------------------------------------------------------------
 // WebServer/Socket Helpers 
 // ----------------------------------------------------------------------------
-
-// Web Server & Socket Setup
 AsyncWebServer server(80);
 AsyncWebSocket ws("/ws");
 
@@ -95,7 +93,8 @@ void initWiFi() {
 
 // Rendering Template "Engine"
 String processor(const String &var) {
-    return String("testing");
+    // return String("testing");
+    return String(var == "STATE" && led.on  "on" : "off");
 }
 
 // SPIFFS Filesystem Setup
@@ -107,9 +106,9 @@ void initSPIFFS() {
   }
 }
 
-// Request Root Handler
+// Request: Root Handler
 void onRootRequest(AsyncWebServerRequest *request) {
-  Serial.println("/index requested.");
+  Serial.println("/index.html requested.");
   request->send(SPIFFS, "/index.html", "text/html", false, processor);
 }
 
@@ -166,6 +165,7 @@ void setup() {
   
   Serial.begin(115200); delay(1000);
   Serial.println("welcome to flavortown. 🌭");
+  Serial.println("did you update the filesystem?");
 
   initSPIFFS();
   initWiFi();
