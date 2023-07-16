@@ -94,7 +94,7 @@ void initWiFi() {
 // Rendering Template "Engine"
 String processor(const String &var) {
     // return String("testing");
-    return String(var == "STATE" && led.on  "on" : "off");
+    return String(var == "STATE" && led.on ? "on" : "off");
 }
 
 // SPIFFS Filesystem Setup
