@@ -34,7 +34,7 @@ ESP32 WROOM 32D V4:
 ## Environment Setup
 You'll need a file named: `wifi_creds.h` in your `/src` dir. 
 
-It should contain: 
+It should be in the following format: 
 
 ```C++
 const char *WIFI_SSID = "thatsWhatSheSSID";
