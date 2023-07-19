@@ -25,9 +25,10 @@ Custom hardware, estimating $20 to $50 depending on process and finish.
 
 **The (long term) plan:** ESP32-Hosted webserver, serving a page via localhost to control the actuators and enable automated pressure profiling. 
 
-**Pinouts:** 
+## Pinouts:
 
-ESP32 WROOM 32D V4 - ![image](/img/esp32_pinout.png)
-TMC2209 Stepper Driver - ![image](/img/tmc2209_pinout.png)
+ESP32 WROOM 32D V4:
+![image](/img/esp32_pinout.png)
+<!-- TMC2209 Stepper Driver - ![image](/img/tmc2209_pinout.png) -->
 
-**Contributors:**
+## Contributors:
