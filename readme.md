@@ -10,7 +10,7 @@ Off the Shelf Hardware:
     - 100mm stroke length used (required?) for this design. 
     - *Please make a PR to this readme if you believe you have alternative options.*
 - TMC2209 Driver: [Amazon](https://www.amazon.com/dp/B08DFV4QQ1?psc=1&ref=ppx_yo2ov_dt_b_product_details)
-    - To be tested still. 
+    - Working so far. 👍 No configuration or anything set up, just tested basic communication. Initial test can be seen [here](https://github.com/johnrbell/ESP32_TCM2209_Testing).
     - These specific ones have misprints on the silkscreening which is noted in the [fysetc wiki](https://wiki.fysetc.com/Silent2209/#v30-hardware-connection). 🤨 
 - 24v to 5v Converter:  [Amazon](https://www.amazon.com/dp/B08NZV88MC?psc=1&ref=ppx_yo2ov_dt_b_product_details)
     - To power the ESP32 from the PSU if not using another source. Using USB for the forseeable future. 
