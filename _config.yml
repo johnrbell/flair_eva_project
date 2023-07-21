@@ -4,4 +4,4 @@ show_downloads: true
 google_analytics:
 theme: minima
 minima:
-  skin: dark
+  skin: auto
