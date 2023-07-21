@@ -1,7 +1,5 @@
 title: Flair Eva Project
 description: just screwing around
-show_downloads: true
-google_analytics:
-theme: minima
-minima:
-  skin: auto
+remote_theme: pages-themes/tactile@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
