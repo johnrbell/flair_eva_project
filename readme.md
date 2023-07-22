@@ -32,6 +32,7 @@ The custom hardware is estimated between $20 and $50 depending on process and fi
 
 ESP32 WROOM 32D V4:
 ![image](/img/esp32_pinout.png)
+Image belongs to [Espressif](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html).
 <!-- TMC2209 Stepper Driver - ![image](/img/tmc2209_pinout.png) -->
 
 ## Environment Setup
