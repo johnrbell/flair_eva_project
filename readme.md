@@ -1,12 +1,9 @@
-
 <p align="center">
-
-![Fancy logo](/img/logo_dark.png#gh-dark-mode-only | width=100)
-
-![Fancy logo](/img/logo_light.png#gh-light-mode-only | width=100)
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/img/logo_dark.png">
+  <img alt="eva logo" src="/img/logo_light.png" width=60%>
+</picture>
 </p>
-
 
 ## Flair 58 EVA Project
 
@@ -41,7 +38,11 @@ The custom hardware is estimated between $20 and $50 depending on process and fi
 ## Pinouts:
 
 ESP32 WROOM 32D V4:
-![image](/img/esp32_pinout.png)
+
+<p align="center">
+  <img alt="eva logo" src="/img/esp32_pinout.png" width=60%>
+</p>
+
 Image belongs to [Espressif](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html).
 <!-- TMC2209 Stepper Driver - ![image](/img/tmc2209_pinout.png) -->
 
