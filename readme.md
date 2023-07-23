@@ -1,7 +1,12 @@
-<p align="center"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="/img/logo_dark.png">
-  <img src="/img/logo_light.png" width=60%>
-</picture></p>
+
+<p align="center">
+
+![Fancy logo](/img/logo_dark.png#gh-dark-mode-only | width=100)
+
+![Fancy logo](/img/logo_light.png#gh-light-mode-only | width=100)
+
+</p>
+
 
 ## Flair 58 EVA Project
 
