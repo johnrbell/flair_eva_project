@@ -1,3 +1,4 @@
+<font face="SF Mono">
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="/img/logo_dark.png">
@@ -68,3 +69,4 @@ If I knew what I was doing, I'd be done.
 
 I'm learning as I go. Don't burn your kitchen down. 🔥
 <!-- ## Contributors: -->
+</font>
