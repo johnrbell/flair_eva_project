@@ -1,5 +1,14 @@
 # Flair 58 EVA Project
 
+
+  <source media="(prefers-color-scheme: dark)" srcset="/img/logo_light.png">
+  <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="/img/logo_light.png">
+</picture>
+
+
+
+
+![image](/img/logo.png)
 **The (long term) plan:** ESP32-Hosted webserver, serving machine controls to any device (laptop, phone, tablet) to control the actuators and enable automated pressure profiling. 
 
 Off the Shelf Hardware: 
