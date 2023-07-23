@@ -40,7 +40,7 @@ The custom hardware is estimated between $20 and $50 depending on process and fi
 ESP32 WROOM 32D V4:
 
 <p align="center">
-  <img alt="eva logo" src="/img/esp32_pinout.png" width=60%>
+  <img alt="eva logo" src="/img/esp32_pinout.png" width=80%>
 </p>
 
 Image belongs to [Espressif](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html).
