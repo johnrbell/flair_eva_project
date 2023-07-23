@@ -1,7 +1,7 @@
-<picture>
+<p align="center"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="/img/logo_dark.png">
-  <img src="/img/logo_light.png">
-</picture>
+  <img src="/img/logo_light.png" width=60%>
+</picture></p>
 
 ## Flair 58 EVA Project
 
