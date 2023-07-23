@@ -1,7 +1,5 @@
-<style>
-*{font-family: 'Source Code Pro', monospace;}
-</style>
 
+<font face='Source Code Pro'>
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="/img/logo_dark.png">
