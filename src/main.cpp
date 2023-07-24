@@ -55,7 +55,7 @@ struct Button {
             // don't forget that the read pin is pulled-up
             bool pressed = reading == LOW;
             if (pressed) {
-                     if (state  < 0xfffe) state++;
+                if (state  < 0xfffe) state++;
                 else if (state == 0xfffe) state = 2;
             } else if (state) {
                 state = state == 0xffff ? 0 : 0xffff;
@@ -121,11 +121,11 @@ void initWebServer() {
 
 // WebSocket Event Handler
 void onEvent(AsyncWebSocket       *server,
-             AsyncWebSocketClient *client,
-             AwsEventType          type,
-             void                 *arg,
-             uint8_t              *data,
-             size_t                len) 
+              AsyncWebSocketClient *client,
+              AwsEventType          type,
+              void                 *arg,
+              uint8_t              *data,
+              size_t                len) 
 {
   switch (type) {
     case WS_EVT_CONNECT:
