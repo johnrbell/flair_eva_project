@@ -1,7 +1,7 @@
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="/img/logo_dark.png">
-  <img alt="eva logo" src="/img/logo_light.png" width=60%>
+  <img alt="eva logo" src="/img/logo_light.png" width=80%>
 </picture>
 </p>
 
