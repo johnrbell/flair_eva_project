@@ -36,7 +36,7 @@ Custom Hardware:
     - TBD.
 
 
-All in, off the shelf parts should be about $150. A significant portion of that is shipping actuators from China at about $45.
+All in, off the shelf parts should be about $100-$200 depending on how involved you'd like to get. A significant portion of that is shipping actuators from China at about $45.
 
 The custom hardware is estimated between $20 and $50 depending on process and finish. 
 
