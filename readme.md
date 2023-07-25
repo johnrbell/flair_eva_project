@@ -1,9 +1,9 @@
-<p align="center">
+<!--<p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="img/logo_dark.png">
-  <img alt="eva logo" src="img/logo_light.png" width=80%>
+  <source media="(prefers-color-scheme: dark)" srcset="/img/logo_dark.png">
+  <img alt="eva logo" src="/img/logo_light.png" width=80%>
 </picture>
-</p>
+</p>-->
 
 ![dark logo](/img/logo_dark.png#gh-dark-mode-only)
 ![light logo](/img/logo_light.png#gh-light-mode-only)
