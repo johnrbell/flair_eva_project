@@ -4,6 +4,9 @@
   <img alt="eva logo" src="/img/logo_light.png" width=80%>
 </picture>
 </p>
+![dark logo](/img/logo_dark.png#gh-dark-mode-only)
+![light logo](/img/logo_light.png#gh-light-mode-only)
+
 
 ## Flair 58 EVA Project
 
