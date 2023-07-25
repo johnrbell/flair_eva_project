@@ -16,12 +16,17 @@ Off the Shelf Hardware:
     - Two are needed to achieve the pressure and maintain actuator speed consistent with 9bar/30sec shot profiles.
     - 100mm stroke length used (required?) for this design. 
     - *Please make a PR to this readme if you believe you have alternative options.*
-- TMC2209 Driver: [Amazon](https://www.amazon.com/dp/B08DFV4QQ1?psc=1&ref=ppx_yo2ov_dt_b_product_details)
+- TMC2209 Driver: [Amazon](https://www.amazon.com/dp/B08DFV4QQ1)
     - Working so far. 👍 No configuration or anything set up, just tested basic communication. Initial test can be seen [here](https://github.com/johnrbell/ESP32_TCM2209_Testing).
     - These specific ones have misprints on the silkscreening which is noted in the [fysetc wiki](https://wiki.fysetc.com/Silent2209/#v30-hardware-connection). 🤨 
-- 24v to 5v Converter:  [Amazon](https://www.amazon.com/dp/B08NZV88MC?psc=1&ref=ppx_yo2ov_dt_b_product_details)
+- Pressure Sensor: [AliExpress](https://www.aliexpress.us/item/2255800570317172.html)
+    - 0-1.2Mp model. 
+    - Untested now, using the same model as [Gaggiuino](https://gaggiuino.github.io/#/)
+- ADS1115 ADC: [Amazon](https://a.co/d/2AMfJ7w)    
+    - Needed for the pressure sensor. Not quite there yet. 
+- 24v to 5v Converter:  [Amazon](https://www.amazon.com/dp/B08NZV88MC)
     - To power the ESP32 from the PSU if not using another source. Using USB for the forseeable future. 
-- 150w 24v PSU:  [Amazon](https://www.amazon.com/dp/B077B7DHYL?psc=1&ref=ppx_yo2ov_dt_b_product_details)
+- 150w 24v PSU:  [Amazon](https://www.amazon.com/dp/B077B7DHYL)
     - Provides 24v to drive the steppers/actuators. 
 
 Custom Hardware:
