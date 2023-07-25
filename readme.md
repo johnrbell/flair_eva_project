@@ -58,7 +58,7 @@ In my case i used [VS Code](https://code.visualstudio.com/) & the [Platform.io](
 
 You'll also need the [USB to UART Bridge VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads)
 
-## "Includes"
+## #Includes
 You'll need a file named: `wifi_creds.h` in your `/src` dir. 
 
 It should be in the following format: 
