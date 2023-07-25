@@ -8,7 +8,6 @@
 ![dark logo](/img/logo_dark.png#gh-dark-mode-only)
 ![light logo](/img/logo_light.png#gh-light-mode-only)
 
-
 ## Flair 58 EVA Project
 
 **The (long term) plan:** ESP32-Hosted webserver, serving machine controls to any device (laptop, phone, tablet) to control the actuators and enable automated pressure profiling. 
