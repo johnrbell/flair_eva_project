@@ -10,7 +10,7 @@
 **The (long term) plan:** ESP32-Hosted webserver, serving machine controls to any device (laptop, phone, tablet) to control the actuators and enable automated pressure profiling. 
 
 Off the Shelf Hardware: 
-- ESP32: [Amazon](a.co/d/gceXPfS)
+- ESP32: [Amazon](https://a.co/d/gceXPfS)
     - Working so far. 👍 I'm inclined to think any variety should work. The "narrow" version is nice because it fits in a standard breadboard with 1 column available on either side. 
 - Linear Actuators: [RobotDigg](https://robotdigg.com/product/1815/9-36VDC-stepper-motor-gear-drive-linear-actuator)
     - Two are needed to achieve the pressure and maintain actuator speed consistent with 9bar/30sec shot profiles.
