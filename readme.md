@@ -21,7 +21,7 @@ Off the Shelf Hardware:
     - These specific ones have misprints on the silkscreening which is noted in the [fysetc wiki](https://wiki.fysetc.com/Silent2209/#v30-hardware-connection). 🤨 
 - Pressure Sensor: [AliExpress](https://www.aliexpress.us/item/2255800570317172.html)
     - 0-1.2Mp model. 
-    - Untested now, using the same model as [Gaggiuino](https://gaggiuino.github.io/#/)
+    - Untested currently, plan is to use the same model as [Gaggiuino](https://gaggiuino.github.io/#/)
 - ADS1115 ADC: [Amazon](https://a.co/d/2AMfJ7w)    
     - Needed for the pressure sensor. Not quite there yet. 
 - 24v to 5v Converter:  [Amazon](https://www.amazon.com/dp/B08NZV88MC)
