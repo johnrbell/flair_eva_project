@@ -76,7 +76,7 @@ I'm learning as I go. Don't burn your kitchen down. 🔥
 
 ## Contributors:
 - [johnrbell](http://www.github.com/johnrbell) - well of course i know him. he's me.
-- [EAF Discord #Makers-Space]([https://discord.gg/espresso](https://discord.com/channels/726985544038612993/796141865099329547)) - I love this place. ❤️ It's the wall where i throw my shitty ideas to see what sticks. 
+- [EAF Discord Makers-Space]([https://discord.gg/espresso](https://discord.com/channels/726985544038612993/796141865099329547)) - I love this place. ❤️ It's the wall where i throw my shitty ideas to see what sticks. 
 
 
 <!-- <a href="#">
