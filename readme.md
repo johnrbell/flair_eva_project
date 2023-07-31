@@ -82,9 +82,9 @@ I'm learning as I go. Don't burn your kitchen down. 🔥
   
 
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
+<a>
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=johnrbell&show_icons=true&theme=transparent&rank_icon=github" />
 </a>
-<a href="https://github.com/anuraghazra/convoychat">
+<a>
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=johnrbell&theme=transparent&hide=html&hideprogress=true&card_width=480" />
 </a>
