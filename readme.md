@@ -73,18 +73,15 @@ const char *WIFI_PASS = "sprinkles";
 If I knew what I was doing, I'd be done. 
 
 I'm learning as I go. Don't burn your kitchen down. 🔥
+
 ## Contributors:
-
-[johnrbell](http://www.github.com/johnrbell) - well of course i know him. he's me.
-
-
-  
-  
+- [johnrbell](http://www.github.com/johnrbell) - well of course i know him. he's me.
+- [EAF Discord](https://discord.gg/espresso) - I love this place. ❤️ It's the wall where i throw my shitty ideas to see what sticks. 
 
 
-<a href="#">
+<!-- <a href="#">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=johnrbell&show_icons=true&theme=transparent&rank_icon=github" />
 </a>
 <a href="#">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=johnrbell&theme=transparent&hide=html&hideprogress=true&card_width=480" />
-</a>
+</a> -->
