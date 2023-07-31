@@ -77,6 +77,6 @@ I'm learning as I go. Don't burn your kitchen down. 🔥
 
 [johnrbell](http://www.github.com/johnrbell) - well of course i know him. he's me.
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
+
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=johnrbell&show_icons=true&theme=dark&rank_icon=github" />
-</a>
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=johnrbell&theme=dark&hide=html&hideprogress=true&card_width=400" />
