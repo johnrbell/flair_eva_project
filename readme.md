@@ -1,12 +1,12 @@
-<!--<p align="center">
+<!-- <p align="center"> -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="/img/logo_dark.png">
-  <img alt="eva logo" src="/img/logo_light.png" width=80%>
+  <source media="(prefers-color-scheme: dark)" srcset="img/logo_dark.png">
+  <img alt="eva logo" src="img/logo_light.png" width=80%>
 </picture>
-</p>-->
+<!-- </p> -->
 
-![dark logo](/img/logo_dark.png#gh-dark-mode-only)
-![light logo](/img/logo_light.png#gh-light-mode-only)
+<!-- ![dark logo](img/logo_dark.png#gh-dark-mode-only)
+![light logo](img/logo_light.png#gh-light-mode-only) -->
 
 ## Flair 58 EVA Project
 
@@ -47,9 +47,7 @@ The custom hardware is estimated between $20 and $50 depending on process and fi
 
 ESP32 WROOM 32D V4:
 
-<p align="center">
-  <img alt="eva logo" src="/img/esp32_pinout.png" width=80%>
-</p>
+<img alt="eva logo" src="img/esp32_pinout.png" width=80%>
 
 Image belongs to [Espressif](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html).
 <!-- TMC2209 Stepper Driver - ![image](/img/tmc2209_pinout.png) -->
@@ -75,5 +73,13 @@ const char *WIFI_PASS = "sprinkles";
 If I knew what I was doing, I'd be done. 
 
 I'm learning as I go. Don't burn your kitchen down. 🔥
-<!-- ## Contributors: -->
-</font>
+## Contributors:
+
+[johnrbell](http://www.github.com/johnrbell)
+
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=johnrbell&show_icons=true&theme=dark&rank_icon=github" />
+</a>
+<a href="https://github.com/anuraghazra/convoychat">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=johnrbell&layout=compact&langs_count=8&card_width=320&theme=dark" />
+</a>
