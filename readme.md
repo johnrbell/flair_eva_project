@@ -65,8 +65,8 @@ You'll need a file named: `wifi_creds.h` in your `/src` dir.
 It should be in the following format: 
 
 ```C++
-const char *WIFI_SSID = "thatsWhatSheSSID";
-const char *WIFI_PASS = "sprinkles";
+const char *WIFI_SSID = "House_LANister";
+const char *WIFI_PASS = "hunter2";
 ```
 
 ## Disclaimer
